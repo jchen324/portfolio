@@ -2,33 +2,9 @@
   "portfolio": [
     {
       "cover": "/portfolio/1/one.png",
-      "title": "GGWP",
-      "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "GGWP",
-      "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "GGWP",
-      "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "GGWP",
-      "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "GGWP",
-      "description": "React, JSX, Tailwind, Jest",
-      "url": "http://google.com"
+      "title": "Blockchain Scanner",
+      "description": "React, NextJS, NodeJS, Supabase",
+      "url": "https://blockchain-scanner.netlify.app/"
     }
   ]
 }

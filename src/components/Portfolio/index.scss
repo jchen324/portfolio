@@ -128,13 +128,19 @@
       height: 200px;
       min-width: calc(50% - 10px);
 
-      .title {
-        font-size: 15px;
+      .content {
+        box-sizing: border-box;
+        padding: 5px 5px;
+        
+        .title {
+          font-size: 15px;
+        }
+  
+        .description {
+          font-size: 10px;
+        }
       }
-
-      .description {
-        font-size: 10px;
-      }
+      
     }
   }
   
