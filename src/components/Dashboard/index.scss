@@ -1,0 +1,75 @@
+.flat-button,
+input::file-selector-button {
+  color: #ffd700;
+  background: 0 0;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ffd700;
+  border-radius: 4px;
+  margin-left: 1%;
+}
+
+.dashboard {
+  &.form {
+    width: 50%;
+
+    input::file-selector-button {
+      margin-right: 10px;
+    }
+
+    input[type='text'] {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    input[type='file'] {
+      font-size: 16px;
+    }
+
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px;
+      min-height: 150px;
+      box-sizing: border-box;
+    }
+
+    .flat-button {
+      float: right;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .login {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .dashboard {
+    &.form {
+      position: initial;
+      margin-top: auto;
+      margin-left: 5%;
+      width: 90%;
+
+      .flat-button {
+        float: right;
+      }
+    }
+  }
+}
