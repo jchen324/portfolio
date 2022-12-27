@@ -1,4 +1,6 @@
-import { signInWithGoogle } from "../../firebase"
+import { signInWithGoogle } from '../../firebase'
+
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -6,8 +8,11 @@ const Login = () => {
       <button className="flat-button" onClick={signInWithGoogle}>
         Sign in with Google
       </button>
+      <Link to="/portfolio">
+        <button className="flat-button">Back</button>
+      </Link>
     </div>
   )
 }
 
-export default Login;
+export default Login

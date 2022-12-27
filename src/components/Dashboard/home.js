@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { auth, storage, db } from '../../firebase'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage'
 import { addDoc, collection } from 'firebase/firestore/lite'
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const form = useRef()
@@ -77,6 +78,9 @@ const Home = () => {
         <button className="flat-button" onClick={() => auth.signOut()}>
           Sign out
         </button>
+        <Link to="/portfolio">
+          <button className="flat-button">Back</button>
+        </Link>
       </form>
     </div>
   )
