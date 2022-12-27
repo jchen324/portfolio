@@ -1,27 +1,23 @@
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { useState, useEffect } from "react";
-import Login from "../Login";
-import Home from "./home";
-import "./index.scss"
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import { useState, useEffect } from 'react'
+import Login from '../Login'
+import Home from './home'
+import './index.scss'
 
 const Dashboard = () => {
-  const [user, setUser] = useState(null);
-  const auth = getAuth();
+  const [user, setUser] = useState(null)
 
   useEffect(() => {
+    const auth = getAuth()
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        setUser(user);
+        setUser(user)
       } else {
-        setUser(null);
+        setUser(null)
       }
     })
   }, [])
-  return (
-    <div>
-      {user ? <Home /> : <Login />}
-    </div>
-  )
+  return <div>{user ? <Home /> : <Login />}</div>
 }
 
-export default Dashboard;
+export default Dashboard
